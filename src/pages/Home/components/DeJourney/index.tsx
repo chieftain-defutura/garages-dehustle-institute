@@ -1,9 +1,9 @@
 import React from "react";
 import "../DeJourney/DeJourney.scss";
 import EarnLevel from "../../../../assets/images/earn-level.png";
-import Learning from "../../../../assets/images/learning.png";
-import Orientation from "../../../../assets/images/Orientation.png";
-import Admission from "../../../../assets/images/admission-interview.png";
+// import Learning from "../../../../assets/images/learning.png";
+// import Orientation from "../../../../assets/images/Orientation.png";
+// import Admission from "../../../../assets/images/admission-interview.png";
 
 const DeJourney = () => {
   return (
