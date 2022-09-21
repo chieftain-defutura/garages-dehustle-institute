@@ -1,0 +1,132 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.CharterLevel-container {
+  .CharterLevel {
+    padding: 64px 0px;
+    font-family: "Grold-Regular";
+    h1 {
+      color: #ffffff;
+      font-size: 2.8rem;
+    }
+    p {
+      color: #777777;
+      font-size: 1.6rem;
+      padding-top: 8px;
+      line-height: 18px;
+    }
+    .boxs {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 32px;
+      padding: 32px;
+      .box-content {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 5px;
+        padding: 32px 64px;
+        .text-coloring {
+          font-size: 3.1rem;
+        }
+        h5 {
+          color: #ffffff;
+          font-size: 3rem;
+        }
+        > p {
+          font-size: 1.3rem;
+          line-height: 1.8rem;
+          padding: 32px 0px;
+        }
+        .minimum-content {
+          display: flex;
+          gap: 16px;
+          .minimum {
+            background: #1b1b1b;
+            border-radius: 5px;
+            padding: 12px 42px;
+            line-height: 36px;
+            h4 {
+              color: #ffffff;
+              font-size: 2rem;
+              text-align: center;
+            }
+            p {
+              font-size: 1rem;
+              text-align: center;
+            }
+          }
+        }
+        .some {
+          display: grid;
+          grid-template-columns: 1fr 1fr;
+          p {
+            margin-top: 32px;
+            font-size: 1.3rem;
+            .de {
+              color: #ffffff;
+            }
+          }
+          .border {
+            margin-bottom: 10px;
+            border-bottom: 1px solid #252525;
+          }
+        }
+        .review-content {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 21px;
+          margin-top: 32px;
+
+          .review {
+            .circle {
+              background: #ffffff;
+              width: 100px;
+              height: 100px;
+              border-radius: 50px;
+            }
+            h3 {
+              color: #ffffff;
+              margin-top: 16px;
+              font-size: 1.4rem;
+            }
+            p {
+              font-size: 1.2rem;
+            }
+          }
+        }
+      }
+    }
+    .join-club {
+      margin-top: 80px;
+      text-align: center;
+      h1 {
+        color: #ffffff;
+        line-height: 45px;
+      }
+      p {
+        margin-top: 10px;
+      }
+    }
+    .users-content {
+      display: flex;
+      justify-content: center;
+      gap: 64px;
+      margin: 32px auto;
+
+      .users {
+        max-width: 300px;
+        width: 100%;
+
+        background: rgba(255, 255, 255, 0.1);
+        border-radius: 5px;
+        text-align: center;
+        padding: 16px;
+      }
+    }
+    .curriculumBtn {
+      margin-top: 48px;
+      text-align: center;
+    }
+  }
+}

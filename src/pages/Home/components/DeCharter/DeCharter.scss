@@ -5,4 +5,41 @@
 }
 .deCharter-container {
   background: #ffffff;
+  .deCharter {
+    padding: 64px;
+
+    h1 {
+      text-align: center;
+      font-size: 3.5rem;
+    }
+    p {
+      font-size: 1.6rem;
+      font-family: "Grold-Regular";
+      color: #777777;
+      text-align: center;
+      line-height: 25px;
+      padding: 28px 250px 52px;
+    }
+    .deCharter-content {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      font-family: "Grold-Regular";
+      text-align: center;
+
+      h6 {
+        font-size: 1.6rem;
+        color: #777777;
+        font-weight: 100;
+        padding: 16px 0px 5px;
+      }
+      h2 {
+        text-transform: uppercase;
+        font-size: 1.8rem;
+      }
+    }
+    .debtn {
+      text-align: center;
+      padding: 62px 0px 25px;
+    }
+  }
 }
