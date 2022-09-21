@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.btn {
+  border: none;
+  font-size: 16px;
+}
+.btn-primary {
+  padding: 16px 32px;
+  border-radius: 3px;
+  background: #00ce53;
+  color: #252525;
+}
+.btn-secondary {
+  padding: 16px 32px;
+  border-radius: 3px;
+  background: #252525;
+  color: #ffffff;
+}
