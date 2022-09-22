@@ -61,6 +61,9 @@ const Career: React.FC = () => {
               talent management services.
             </p>
           </div>
+          <div className="interview-img2">
+            <img src={UndrawCoding} alt="" />
+          </div>
           <div className="interview-content">
             <div className="tick">
               <div>
