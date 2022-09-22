@@ -21,22 +21,22 @@ const DeCharter = () => {
           <div className="deCharter-content">
             <div>
               <img src={Lock} alt="" />
-              <h6>Priority access to</h6>
+              <p>Priority access to</p>
               <h2>Job Opportunities</h2>
             </div>
             <div>
               <img src={Calendar} alt="" />
-              <h6>Network & attend</h6>
+              <p>Network & attend</p>
               <h2>exclusive events</h2>
             </div>
             <div>
               <img src={Star} alt="" />
-              <h6>use stoa L1 / L2</h6>
+              <p>use stoa L1 / L2</p>
               <h2>designation</h2>
             </div>
             <div>
               <img src={Negotiation} alt="" />
-              <h6>Higher salary</h6>
+              <p>Higher salary</p>
               <h2>negotiating power</h2>
             </div>
           </div>

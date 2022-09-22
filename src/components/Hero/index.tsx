@@ -36,7 +36,7 @@ const Hero: React.FC = () => {
               <Button variant="secondary" children="Learn More" />
             </div>
           </div>
-          <div>
+          <div className="web-img">
             <img src={WebDevelopment} alt="" />
           </div>
         </div>

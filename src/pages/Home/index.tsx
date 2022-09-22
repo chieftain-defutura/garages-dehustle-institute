@@ -6,6 +6,7 @@ import {
   DeCharter,
   DeJourney,
   GetStarted,
+  Professionals,
 } from "./components";
 
 const Home: React.FC = () => {
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
       <CharterLevels />
       <DeJourney />
       <Career />
+      <Professionals />
       <GetStarted />
       <Footer />
     </div>

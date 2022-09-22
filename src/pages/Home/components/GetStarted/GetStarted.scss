@@ -1,0 +1,123 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.getStarted-container {
+  .getStarted {
+    padding-top: 95px;
+    .get {
+      text-align: center;
+      color: #ffffff;
+
+      h1 {
+        font-size: 3rem;
+        font-weight: 100;
+      }
+      h6 {
+        padding-top: 32px;
+        font-size: 1.6rem;
+        font-family: "Grold-Light";
+        font-weight: 100;
+      }
+      P {
+        padding-top: 32px;
+        // color: #777777;
+        // font-size: 1.3rem;
+        span {
+          color: #ffffff;
+        }
+      }
+      Button {
+        margin-top: 32px;
+      }
+    }
+    .heading {
+      text-align: center;
+      h2 {
+        color: #ffffff;
+        font-weight: 100;
+        font-size: 2.3rem;
+        padding-top: 64px;
+        font-family: "Grold-Light";
+      }
+    }
+    .program-works {
+      display: grid;
+      grid-template-columns: repeat(5, 1fr);
+      gap: 32px;
+      padding-top: 72px;
+      @media (max-width: 870px) {
+        gap: 12px;
+      }
+      @media (max-width: 800px) {
+        grid-template-columns: repeat(3, 1fr);
+      }
+      .works {
+        max-width: 230px;
+        width: 100%;
+        padding-top: 40px;
+        > div {
+          background: rgba(255, 255, 255, 0.05);
+          border-radius: 5px;
+          padding: 16px 28px 16px;
+          text-align: center;
+          height: 100%;
+          position: relative;
+          @media (max-width: 1100px) {
+            padding: 16px 20px 10px;
+          }
+          @media (max-width: 870px) {
+            padding: 15px;
+          }
+          h3 {
+            position: absolute;
+            bottom: calc(100% - 8px);
+            left: 0;
+            color: #777777;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #ffffff;
+            display: grid;
+            place-items: center;
+            @media (max-width: 1205px) {
+              width: 40px;
+              height: 40px;
+            }
+
+            span {
+              font-size: 3rem;
+              // line-height: 4rem;
+              @media (max-width: 1205px) {
+                font-size: 2rem;
+              }
+            }
+          }
+
+          h2 {
+            font-size: 1.8rem;
+            font-weight: 100;
+            color: #ffffff;
+            font-family: "Grold-Light";
+            @media (max-width: 1220px) {
+              font-size: 1.5rem;
+            }
+          }
+          p {
+            // color: #777777;
+            // font-size: 1.2rem;
+            line-height: 14px;
+            font-weight: 100;
+            margin-top: 8px;
+            @media (max-width: 1380px) {
+              font-size: 1rem;
+            }
+          }
+        }
+      }
+    }
+  }
+}

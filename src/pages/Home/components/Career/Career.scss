@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.career-container {
+  .countCareers {
+    position: relative;
+    .career {
+      padding: 40px 0px;
+      h2 {
+        color: #ffffff;
+        font-size: 2.5rem;
+        font-weight: 100;
+      }
+      p {
+        // color: #777777;
+        // font-size: 1.4rem;
+        margin-top: 8px;
+      }
+    }
+    .interview-content {
+      display: flex;
+      gap: 100px;
+      // @media (max-width: 1300px) {
+      //   display: block;
+      // }
+
+      .tick {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 66px;
+        @media (max-width: 940px) {
+          gap: 50px;
+        }
+
+        .interview {
+          display: flex;
+          gap: 18px;
+          margin-top: 20px;
+
+          p {
+            font-size: 1.6rem;
+            color: #ffffff;
+            @media (max-width: 1111px) {
+              font-size: 1.4rem;
+            }
+            @media (max-width: 1000px) {
+              font-size: 1.3rem;
+            }
+          }
+        }
+      }
+      .interview-img {
+        position: absolute;
+        right: 0;
+        top: 90px;
+        // @media (max-width: 1300px) {
+        //   position: unset;
+        // }
+        @media (max-width: 1215px) {
+          top: 120px;
+        }
+        @media (max-width: 1175px) {
+          top: 140px;
+        }
+        @media (max-width: 975px) {
+          top: 160px;
+        }
+
+        img {
+          width: 300px;
+          @media (max-width: 1215px) {
+            width: 250px;
+          }
+          @media (max-width: 1175px) {
+            width: 200px;
+          }
+          @media (max-width: 975px) {
+            width: 170px;
+          }
+        }
+      }
+    }
+    .slider {
+      max-width: 100%;
+      width: 100%;
+      background: #222222;
+      padding: 28px 40px;
+      margin-top: 64px;
+    }
+  }
+}

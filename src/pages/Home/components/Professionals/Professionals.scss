@@ -1,0 +1,59 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.professionals-container {
+  .professionals {
+    .professionals-head {
+      padding-top: 64px;
+      h1 {
+        text-align: center;
+        color: #ffffff;
+        font-size: 3rem;
+        font-weight: 100;
+      }
+    }
+    .defutura {
+      padding-top: 32px;
+      .defutura-box {
+        background: rgba(255, 255, 255, 0.05);
+        border-radius: 5px;
+        color: #ffffff;
+        margin-right: 34px;
+        text-align: center;
+        padding: 32px;
+
+        .border-radio {
+          width: 100px;
+          height: 100px;
+          border-radius: 50px;
+          margin: 0 auto;
+          background: #ffffff;
+        }
+        h5 {
+          margin-top: 8px;
+          font-size: 1.2rem;
+          font-weight: 100;
+        }
+        p {
+          margin-top: 16px;
+          font-size: 1rem;
+          color: #777777;
+        }
+        h4 {
+          margin-top: 4px;
+          font-size: 1.2rem;
+          font-weight: 100;
+        }
+        img {
+          margin: 0 auto;
+          margin-top: 16px;
+        }
+        .defu {
+          margin-top: 8px;
+        }
+      }
+    }
+  }
+}

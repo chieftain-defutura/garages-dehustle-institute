@@ -6,16 +6,26 @@
 .btn {
   border: none;
   font-size: 16px;
+  cursor: pointer;
 }
 .btn-primary {
   padding: 16px 32px;
   border-radius: 3px;
   background: #00ce53;
   color: #252525;
+  @media (max-width: 834px) {
+    padding: 15px 14px;
+    font-size: 1rem;
+  }
 }
+
 .btn-secondary {
   padding: 16px 32px;
   border-radius: 3px;
   background: #252525;
   color: #ffffff;
+  @media (max-width: 834px) {
+    padding: 15px 14px;
+    font-size: 1.2rem;
+  }
 }

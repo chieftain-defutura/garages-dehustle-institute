@@ -6,32 +6,45 @@
 .hero-container {
   .hero {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: space-between;
 
     .hero-content {
       padding: 64px 0px;
       h1 {
-        font-size: 6rem;
+        font-family: "Grold-Regular";
+        font-size: 5rem;
         color: var(--white);
+        @media (max-width: 834px) {
+          font-size: 2.8rem;
+        }
         .text-coloring {
-          font-family: "Grold-Regular";
           font-weight: 100;
         }
       }
       h2 {
+        font-family: "Grold-Regular";
         color: var(--white);
         font-size: 6rem;
+        @media (max-width: 834px) {
+          font-size: 2.8rem;
+        }
 
         span {
-          font-family: "Grold-Regular";
+          font-size: 3.1rem;
+          font-family: "Grold-SemiLight";
           font-weight: 100;
+        }
+        @media (max-width: 834px) {
+          font-size: 2.8rem;
         }
       }
       p {
         color: var(--white);
-        font-size: 1.6rem;
+        font-size: 1.3rem;
         padding: 16px 0px;
+        @media (max-width: 834px) {
+          font-size: 1.3rem;
+        }
       }
       .hero-imgs {
         display: flex;
@@ -42,6 +55,14 @@
         display: flex;
         gap: 16px;
         padding: 24px 0px;
+      }
+    }
+    .web-img {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      img {
+        max-width: 100%;
       }
     }
   }
