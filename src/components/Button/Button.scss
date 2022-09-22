@@ -13,9 +13,16 @@
   border-radius: 3px;
   background: #00ce53;
   color: #252525;
-  @media (max-width: 834px) {
+  @media (max-width: 860px) {
     padding: 15px 14px;
     font-size: 1rem;
+  }
+  @media (max-width: 421px) {
+    padding: 12px 11px;
+  }
+  @media (max-width: 416px) {
+    padding: 11px 10px;
+    font-size: 0.9rem;
   }
 }
 
@@ -24,8 +31,15 @@
   border-radius: 3px;
   background: #252525;
   color: #ffffff;
-  @media (max-width: 834px) {
+  @media (max-width: 860px) {
     padding: 15px 14px;
     font-size: 1.2rem;
+  }
+  @media (max-width: 421px) {
+    padding: 12px 11px;
+  }
+  @media (max-width: 416px) {
+    padding: 11px 10px;
+    font-size: 0.9rem;
   }
 }

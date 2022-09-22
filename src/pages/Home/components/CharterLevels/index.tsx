@@ -5,7 +5,7 @@ import Radio from "../../../../assets/logo/radio.svg";
 import Video from "../../../../assets/logo/video.svg";
 import { Button } from "../../../../components";
 
-const CharterLevel = () => {
+const CharterLevel: React.FC = () => {
   return (
     <div className="CharterLevel-container">
       <div className="mx pad">

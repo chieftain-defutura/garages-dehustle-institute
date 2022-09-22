@@ -25,6 +25,9 @@ const Hero: React.FC = () => {
                 of MBA.
               </p>
             </div>
+            <div className="web2-img">
+              <img src={WebDevelopment} alt="" />
+            </div>
             <div className="hero-imgs">
               <img src={Html} alt="" />
               <img src={Css} alt="" />

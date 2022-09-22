@@ -7,15 +7,33 @@
   .CharterLevel {
     padding: 64px 0px;
     font-family: "Grold-Regular";
+
+    @media (max-width: 1080px) {
+      padding: 50px 0px;
+    }
+    @media (max-width: 405px) {
+      padding: 32px 0px;
+    }
     h1 {
+      font-family: "Grold-Regular";
+      font-weight: 100;
       color: #ffffff;
       font-size: 2.8rem;
+      @media (max-width: 1080px) {
+        text-align: center;
+      }
+      @media (max-width: 405px) {
+        font-size: 2.2rem;
+      }
     }
     p {
       // color: #777777;
       // font-size: 1.6rem;
       padding-top: 8px;
       line-height: 18px;
+      @media (max-width: 1080px) {
+        text-align: center;
+      }
     }
     .boxs {
       display: grid;
@@ -33,30 +51,72 @@
         background: rgba(255, 255, 255, 0.05);
         border-radius: 5px;
         padding: 32px 64px;
+        @media (max-width: 630px) {
+          padding: 32px 40px;
+        }
+        @media (max-width: 470px) {
+          padding: 30px 25px;
+        }
+
         .text-coloring {
           font-size: 3.1rem;
+          @media (max-width: 396px) {
+            font-size: 2.5rem;
+          }
         }
         h5 {
+          font-family: "Grold-Regular";
+          font-weight: 100;
           color: #ffffff;
           font-size: 3rem;
+          @media (max-width: 405px) {
+            font-size: 2.3rem;
+          }
+          @media (max-width: 396px) {
+            font-size: 2rem;
+            line-height: 30px;
+          }
         }
         > p {
-          // font-size: 1.3rem;
+          text-align: left;
           line-height: 1.8rem;
           padding: 32px 0px;
+          @media (max-width: 396px) {
+            padding: 16px 0px;
+            line-height: 1.4rem;
+          }
         }
         .minimum-content {
           display: flex;
+          justify-content: center;
+          align-items: center;
           gap: 16px;
           .minimum {
             background: #1b1b1b;
             border-radius: 5px;
             padding: 12px 42px;
             line-height: 36px;
+            @media (max-width: 626px) {
+              padding: 10px 30px;
+            }
+            @media (max-width: 566px) {
+              padding: 10px 20px;
+            }
+            @media (max-width: 478px) {
+              padding: 10px 10px;
+            }
             h4 {
+              font-family: "Grold-Regular";
+              font-weight: 200;
               color: #ffffff;
               font-size: 2rem;
               text-align: center;
+              @media (max-width: 460px) {
+                font-size: 1.6rem;
+              }
+              @media (max-width: 396px) {
+                font-size: 1.4rem;
+              }
             }
             p {
               font-size: 1rem;
@@ -72,6 +132,9 @@
             font-size: 1.3rem;
             .de {
               color: #ffffff;
+            }
+            @media (max-width: 396px) {
+              font-size: 1rem;
             }
           }
           .border {
@@ -91,14 +154,35 @@
               width: 100px;
               height: 100px;
               border-radius: 50px;
+              @media (max-width: 560px) {
+                width: 75px;
+                height: 75px;
+              }
+              @media (max-width: 396px) {
+                width: 55px;
+                height: 55px;
+              }
             }
             h3 {
+              font-family: "Grold-Regular";
+              font-weight: 100;
+              text-align: left;
               color: #ffffff;
               margin-top: 16px;
               font-size: 1.4rem;
+              @media (max-width: 560px) {
+                font-size: 1.2rem;
+              }
             }
             p {
+              text-align: left;
               font-size: 1.2rem;
+              @media (max-width: 560px) {
+                font-size: 0.8rem;
+              }
+              @media (max-width: 396px) {
+                line-height: 13px;
+              }
             }
           }
         }
@@ -107,9 +191,22 @@
     .join-club {
       margin-top: 80px;
       text-align: center;
+      @media (max-width: 1000px) {
+        margin-top: 40px;
+      }
       h1 {
         color: #ffffff;
         line-height: 45px;
+        font-size: 2.8rem;
+        @media (max-width: 500px) {
+          font-size: 2.4rem;
+        }
+        @media (max-width: 382px) {
+          font-size: 2.2rem;
+        }
+        @media (max-width: 356px) {
+          font-size: 2rem;
+        }
       }
       p {
         margin-top: 10px;
@@ -118,8 +215,18 @@
     .users-content {
       display: flex;
       justify-content: center;
+      align-items: center;
       gap: 64px;
-      margin: 32px auto;
+      padding-top: 32px;
+
+      @media (max-width: 835px) {
+        gap: 32px;
+      }
+      @media (max-width: 465px) {
+        display: block;
+        gap: 16px;
+        padding: 20px;
+      }
 
       .users {
         max-width: 300px;
@@ -128,6 +235,12 @@
         border-radius: 5px;
         text-align: center;
         padding: 16px;
+        @media (max-width: 620px) {
+          padding: 13px;
+        }
+        @media (max-width: 465px) {
+          margin: 16px auto;
+        }
       }
     }
     .curriculumBtn {
