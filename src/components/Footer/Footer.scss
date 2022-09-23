@@ -27,9 +27,11 @@
       @media (max-width: 1095px) {
         text-align: center;
       }
+      @media (max-width: 400px) {
+        display: block;
+      }
 
       .footerBorder {
-        height: 100%;
         display: grid;
         place-items: center;
         margin-top: -24px;
@@ -48,6 +50,9 @@
           padding: 0 15px;
           @media (max-width: 500px) {
             padding: 0px;
+          }
+          @media (max-width: 400px) {
+            border: none;
           }
         }
         svg {
@@ -95,6 +100,9 @@
         @media (max-width: 500px) {
           margin-left: 0px;
         }
+        @media (max-width: 400px) {
+          margin-left: -10px;
+        }
 
         h5 {
           color: #8c8c8c;
@@ -103,6 +111,10 @@
           font-weight: 400;
           @media (max-width: 1095px) {
             text-align: left;
+          }
+          @media (max-width: 400px) {
+            margin-top: 30px;
+            margin-bottom: -20px;
           }
         }
         .Icon {
@@ -170,16 +182,13 @@
         gap: 100px;
       }
       @media (max-width: 550px) {
+        gap: 80px;
+      }
+      @media (max-width: 461px) {
         gap: 50px;
       }
-      @media (max-width: 441px) {
-        gap: 30px;
-      }
       @media (max-width: 401px) {
-        gap: 10px;
-      }
-      @media (max-width: 361px) {
-        gap: 5px;
+        gap: 30px;
       }
 
       h5 {
