@@ -17,16 +17,16 @@
     h1 {
       font-family: "Grold-Regular";
       text-align: center;
-      font-size: 3.5rem;
-      @media (max-width: 960px) {
-        font-size: 2.8rem;
+      font-size: 4rem;
+      @media (max-width: 835px) {
+        font-size: 3.2rem;
       }
-      @media (max-width: 415px) {
-        font-size: 2.5rem;
+      @media (max-width: 450px) {
+        font-size: 2.4rem;
       }
     }
     p {
-      font-size: 1.4rem;
+      font-size: 1.6rem;
       text-align: center;
       line-height: 25px;
       padding: 28px 250px 52px;
@@ -47,6 +47,7 @@
       }
       @media (max-width: 600px) {
         padding: 18px 0px 30px;
+        font-size: 1.4rem;
       }
     }
     .deCharter-content {

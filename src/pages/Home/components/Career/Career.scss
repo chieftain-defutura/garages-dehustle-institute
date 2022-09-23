@@ -10,12 +10,16 @@
       padding: 40px 0px;
       h2 {
         color: #ffffff;
-        font-size: 2.5rem;
+        font-size: 4rem;
         font-weight: 100;
+        @media (max-width: 835px) {
+          font-size: 3.2rem;
+        }
+        @media (max-width: 460px) {
+          font-size: 2.3rem;
+        }
       }
       p {
-        // color: #777777;
-        // font-size: 1.4rem;
         margin-top: 8px;
       }
     }
@@ -47,7 +51,10 @@
           gap: 50px;
         }
         @media (max-width: 895px) {
-          gap: 5px;
+          gap: 0px;
+        }
+        @media (max-width: 780px) {
+          margin-top: 42px;
         }
 
         .interview {
@@ -70,6 +77,9 @@
             @media (max-width: 895px) {
               font-size: 1.1rem;
             }
+            @media (max-width: 780px) {
+              font-size: 1.6rem;
+            }
           }
         }
       }
@@ -87,13 +97,6 @@
         @media (max-width: 975px) {
           top: 160px;
         }
-        // @media (max-width: 780px) {
-        //   position: unset;
-        //   display: flex;
-        //   justify-content: center;
-        //   align-items: center;
-        //   margin-top: 20px;
-        // }
 
         img {
           width: 300px;
@@ -109,9 +112,6 @@
           @media (max-width: 780px) {
             display: none;
           }
-          // @media (max-width: 560px) {
-          //   width: 300px;
-          // }
         }
       }
     }

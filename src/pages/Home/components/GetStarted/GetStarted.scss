@@ -66,8 +66,10 @@
       }
       @media (max-width: 500px) {
         grid-template-columns: repeat(2, 1fr);
-        gap: 20px;
+        column-gap: 24px;
+        row-gap: 50px;
       }
+
       .works {
         max-width: 230px;
         width: 100%;
