@@ -115,13 +115,21 @@
         }
       }
     }
-
-    .slider {
-      max-width: 100%;
-      width: 100%;
-      background: #222222;
-      padding: 28px 40px;
-      margin-top: 64px;
-    }
+  }
+}
+.slider {
+  max-width: 100%;
+  width: 100%;
+  background: #222222;
+  padding: 28px 0px;
+  margin-top: 64px;
+  @media (max-width: 760px) {
+    padding-left: 40px;
+  }
+  @media (max-width: 440px) {
+    padding-left: 130px;
+  }
+  @media (max-width: 415px) {
+    padding-left: 100px;
   }
 }

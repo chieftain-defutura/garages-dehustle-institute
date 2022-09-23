@@ -48,64 +48,67 @@ const settings = {
 
 const Career: React.FC = () => {
   return (
-    <div className="career-container">
-      <div className="mx pad">
-        <div className="countCareers">
-          <div className="career">
-            <h2>
-              <span className="text-coloring">Count on us</span> to
-            </h2>
-            <h2>accelerate your career</h2>
-            <p>
-              Stoa L1 / L2 holders get access to our partner companies and
-              talent management services.
-            </p>
-          </div>
-          <div className="interview-img2">
-            <img src={UndrawCoding} alt="" />
-          </div>
-          <div className="interview-content">
-            <div className="tick">
-              <div>
-                <div className="interview">
-                  <img src={Tick} alt="" />
-                  <p>Get help figuring out the right role</p>
-                </div>
-                <div className="interview">
-                  <img src={Tick} alt="" />
-                  <p>Referrals to 200+ companies</p>
-                </div>
-              </div>
-              <div>
-                <div className="interview">
-                  <img src={Tick} alt="" />
-                  <p>CV and Interview preparation</p>
-                </div>
-                <div className="interview">
-                  <img src={Tick} alt="" />
-                  <p>Coaching on salary negotiation</p>
-                </div>
-              </div>
+    <>
+      <div className="career-container">
+        <div className="mx pad">
+          <div className="countCareers">
+            <div className="career">
+              <h2>
+                <span className="text-coloring">Count on us</span> to
+              </h2>
+              <h2>accelerate your career</h2>
+              <p>
+                Stoa L1 / L2 holders get access to our partner companies and
+                talent management services.
+              </p>
             </div>
-            <div className="interview-img">
+            <div className="interview-img2">
               <img src={UndrawCoding} alt="" />
             </div>
-          </div>
-
-          <div className="slider">
-            <Slider {...settings} className="slide-track">
-              {Images.map((f, index) => (
-                <>
-                  <div key={index} className="slide">
-                    <f.Images />
+            <div className="interview-content">
+              <div className="tick">
+                <div>
+                  <div className="interview">
+                    <img src={Tick} alt="" />
+                    <p>Get help figuring out the right role</p>
                   </div>
-                </>
-              ))}
-            </Slider>
+                  <div className="interview">
+                    <img src={Tick} alt="" />
+                    <p>Referrals to 200+ companies</p>
+                  </div>
+                </div>
+                <div>
+                  <div className="interview">
+                    <img src={Tick} alt="" />
+                    <p>CV and Interview preparation</p>
+                  </div>
+                  <div className="interview">
+                    <img src={Tick} alt="" />
+                    <p>Coaching on salary negotiation</p>
+                  </div>
+                </div>
+              </div>
+              <div className="interview-img">
+                <img src={UndrawCoding} alt="" />
+              </div>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+      <div className="slider">
+        <div className="mx pad">
+          <Slider {...settings} className="slide-track">
+            {Images.map((f, index) => (
+              <>
+                <div key={index} className="slide">
+                  <f.Images />
+                </div>
+              </>
+            ))}
+          </Slider>
+        </div>
+      </div>
+    </>
   );
 };
 
