@@ -10,7 +10,7 @@ const CharterLevel: React.FC = () => {
     <div className="CharterLevel-container">
       <div className="mx pad">
         <div className="CharterLevel">
-          <h1>The Charter Levels</h1>
+          <h1>The Charter Levels.</h1>
           <p>The level you reach is an endorsement of your business impact.</p>
           <div className="boxs">
             <div className="box-content">
@@ -121,7 +121,7 @@ const CharterLevel: React.FC = () => {
             <h1>
               The <span className="text-coloring">De Program</span>
             </h1>
-            <h1>your path to join the club</h1>
+            <h1>your path to join the club.</h1>
             <p>
               Each week-long skill 'sprint' is a mix of solo and live
               group-based learning.

@@ -6,12 +6,12 @@ import Star from "../../../../assets/logo/star.svg";
 import Negotiation from "../../../../assets/logo/negotiation.svg";
 import { Button } from "../../../../components";
 
-const DeCharter = () => {
+const DeCharter: React.FC = () => {
   return (
     <div className="deCharter-container">
       <div className="mx pad">
         <div className="deCharter">
-          <h1>De Charter</h1>
+          <h1>De Charter.</h1>
           <p>
             A highly selective professional club ⓘ for business and management
             talent. Only those who clear our industry-backed rigourous process
@@ -21,12 +21,12 @@ const DeCharter = () => {
           <div className="deCharter-content">
             <div>
               <img src={Lock} alt="" />
-              <p>Priority access to</p>
+              <p>priority access to</p>
               <h2>Job Opportunities</h2>
             </div>
             <div>
               <img src={Calendar} alt="" />
-              <p>Network & attend</p>
+              <p>network & attend</p>
               <h2>exclusive events</h2>
             </div>
             <div>
@@ -36,7 +36,7 @@ const DeCharter = () => {
             </div>
             <div>
               <img src={Negotiation} alt="" />
-              <p>Higher salary</p>
+              <p>higher salary</p>
               <h2>negotiating power</h2>
             </div>
           </div>

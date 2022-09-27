@@ -1,15 +1,10 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .professionals-container {
   .professionals {
     .professionals-head {
       padding-top: 64px;
       h1 {
         text-align: center;
-        color: #ffffff;
+        color: var(--white-primary);
         font-size: 4rem;
         font-weight: 100;
         @media (max-width: 835px) {
@@ -25,7 +20,7 @@
       .defutura-box {
         background: rgba(255, 255, 255, 0.05);
         border-radius: 5px;
-        color: #ffffff;
+        color: var(--white-primary);
         margin-right: 34px;
         margin-left: 20px;
         text-align: center;
@@ -42,7 +37,7 @@
           height: 100px;
           border-radius: 50px;
           margin: 0 auto;
-          background: #ffffff;
+          background: var(--white-primary);
         }
         h5 {
           text-transform: uppercase;
@@ -52,12 +47,13 @@
         }
         p {
           margin-top: 16px;
-          font-size: 1rem;
-          color: #777777;
+          font-size: 1.2rem;
+          color: var(--black-secondary);
         }
         h4 {
+          font-family: "Grold-Light";
           margin-top: 4px;
-          font-size: 1.2rem;
+          font-size: 1.1rem;
           font-weight: 100;
         }
         img {

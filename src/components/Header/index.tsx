@@ -1,7 +1,8 @@
 import React from "react";
-import Logo from "../../assets/logo/logo.svg";
+import { ReactComponent as Logo } from "../../assets/logo/logo.svg";
 import Button from "../Button";
 import "../Header/Header.scss";
+import { Link } from "react-router-dom";
 
 const Header: React.FC = () => {
   return (
@@ -9,9 +10,11 @@ const Header: React.FC = () => {
       <div className="mx pad">
         <div className="header">
           <div>
-            <img src={Logo} alt="" />
+            <Link to="/">
+              <Logo />
+            </Link>
           </div>
-          <Button children={"Download Browture"} variant={"primary"} />
+          <Button children="Download Brochure" variant={"primary"} />
         </div>
       </div>
     </div>

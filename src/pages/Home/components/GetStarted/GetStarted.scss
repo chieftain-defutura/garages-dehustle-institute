@@ -1,14 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .getStarted-container {
   .getStarted {
     padding-top: 95px;
     .get {
       text-align: center;
-      color: #ffffff;
+      color: var(--white-primary);
 
       h1 {
         font-size: 3.5rem;
@@ -32,7 +27,8 @@
           padding-top: 16px;
         }
         span {
-          color: #ffffff;
+          font-family: "Grold-SemiLight";
+          color: var(--white-primary);
         }
       }
       Button {
@@ -42,7 +38,8 @@
     .heading {
       text-align: center;
       h2 {
-        color: #ffffff;
+        text-transform: uppercase;
+        color: var(--white-primary);
         font-weight: 100;
         font-size: 2.5rem;
         padding-top: 64px;
@@ -94,13 +91,13 @@
             position: absolute;
             bottom: calc(100% - 8px);
             left: 0;
-            color: #777777;
+            color: var(--black-secondary);
             width: 50px;
             height: 50px;
             border-radius: 50%;
             left: 50%;
             transform: translateX(-50%);
-            background: #ffffff;
+            background: var(--white-primary);
             display: grid;
             place-items: center;
             @media (max-width: 1205px) {
@@ -110,7 +107,6 @@
 
             span {
               font-size: 3rem;
-              // line-height: 4rem;
               @media (max-width: 1205px) {
                 font-size: 2rem;
               }
@@ -120,16 +116,15 @@
           h2 {
             font-size: 1.8rem;
             font-weight: 100;
-            color: #ffffff;
+            color: var(--white-primary);
             font-family: "Grold-Light";
             @media (max-width: 1220px) {
               font-size: 1.5rem;
             }
           }
           p {
-            // color: #777777;
-            // font-size: 1.2rem;
-            line-height: 14px;
+            font-size: 1.2rem;
+            line-height: 19px;
             font-weight: 100;
             margin-top: 8px;
             @media (max-width: 1380px) {

@@ -1,10 +1,5 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
 .deCharter-container {
-  background: #ffffff;
+  background: var(--white-primary);
   .deCharter {
     padding: 64px;
     @media (max-width: 1000px) {
@@ -26,24 +21,16 @@
       }
     }
     p {
+      font-family: "Grold-Light";
       font-size: 1.6rem;
       text-align: center;
-      line-height: 25px;
-      padding: 28px 250px 52px;
+      line-height: 28px;
+      padding: 28px 200px 52px;
       @media (max-width: 1250px) {
-        padding: 28px 200px 52px;
-      }
-      @media (max-width: 1125px) {
-        padding: 28px 150px 52px;
-      }
-      @media (max-width: 960px) {
         padding: 28px 100px 52px;
       }
-      @media (max-width: 860px) {
-        padding: 28px 60px 40px;
-      }
-      @media (max-width: 700px) {
-        padding: 24px 20px 35px;
+      @media (max-width: 930px) {
+        padding: 28px 50px 52px;
       }
       @media (max-width: 600px) {
         padding: 18px 0px 30px;
@@ -64,9 +51,6 @@
       }
 
       p {
-        // font-size: 1.6rem;
-        // color: #777777;
-        font-weight: 100;
         padding: 16px 0px 5px;
       }
       h2 {

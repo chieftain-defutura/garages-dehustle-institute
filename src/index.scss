@@ -1,20 +1,4 @@
 @font-face {
-  font-family: "Grold-Black";
-  src: url(./assets/fonts/Grold-Black.ttf);
-}
-@font-face {
-  font-family: "Grold-Bold";
-  src: url(./assets/fonts/Grold-Bold.ttf);
-}
-@font-face {
-  font-family: "Grold-ExtraBlack";
-  src: url(./assets/fonts/Grold-ExtraBlack.ttf);
-}
-@font-face {
-  font-family: "Grold-ExtraBold";
-  src: url(./assets/fonts/Grold-ExtraBold.ttf);
-}
-@font-face {
   font-family: "Grold-Medium";
   src: url(./assets/fonts/Grold-Medium.ttf);
 }
@@ -36,8 +20,16 @@
 }
 
 :root {
-  --white: #ffffff;
-  --white-1: #cccccc;
+  --white-primary: #ffffff;
+  --white-secondary: #cccccc;
+  --gray: #8c8c8c;
+  --background-black: #111111;
+  --background-black2: #0e0e0e;
+  --black-primary: #252525;
+  --black-secondary: #777777;
+  --background-primary: #222222;
+  --background-secondary: #1b1b1b;
+  --green: #00ce53;
 }
 
 html {
@@ -86,9 +78,10 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   font-family: "Grold-Light";
+  font-weight: 100;
 }
 p {
   font-family: "Grold-SemiLight";
-  color: #777777;
+  color: var(--black-secondary);
   font-size: 1.4rem;
 }
