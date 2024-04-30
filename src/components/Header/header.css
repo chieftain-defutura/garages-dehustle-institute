@@ -1,0 +1,150 @@
+@font-face {
+  font-family: "Gilroy-SemiBold.ttf";
+  src: url(../../assets/fonts/Gilroy-SemiBold.ttf);
+}
+
+.header_main {
+  padding: 16px 32px;
+  background-color: #ff7a00;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Gilroy-Medium.ttf";
+  padding: 32px 64px;
+}
+
+.header_main a {
+  text-decoration: none;
+  color: #ffc690;
+}
+
+.header_main > img {
+  width: 144.66px;
+  height: 55.3px;
+}
+
+.header_main .header_btns {
+  display: flex;
+  gap: 30px;
+}
+
+.header_btns > a {
+  color: white;
+}
+
+.header_main .header_btns a,
+.header_main .header_btns button {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header_btns button {
+  border: none;
+  background-color: white;
+  color: #ff7a00;
+  padding: 7.37px 30.27px;
+  font-family: "Gilroy-SemiBold.ttf";
+  font-size: 14px;
+}
+
+.responsive_main {
+  display: none;
+}
+
+.responsive_mobile {
+  display: none;
+}
+@media (max-width: 834px) {
+  .header_main {
+    display: none;
+  }
+  .responsive_main {
+    display: block;
+  }
+  .responsive_head {
+    display: flex;
+    justify-content: space-between;
+    padding: 16px 32px;
+    background-color: #ff7a00;
+  }
+  .responsive_head > img {
+    width: 187.01px;
+    height: 71.5px;
+  }
+
+  .responsive_head > button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    border: none;
+    background-color: white;
+    color: #ff7a00;
+    padding: 13px 5px;
+    font-family: "Gilroy-SemiBold.ttf";
+    font-size: 12px;
+    width: 203px;
+    height: 39px;
+  }
+}
+
+@media (max-width: 366px) {
+  .responsive_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #ff7a00;
+    padding: 32px 16px;
+  }
+
+  .responsive_mobile #logo {
+    width: 108px;
+    height: 42px;
+  }
+
+  .responsive_mobile #ham {
+    width: 24px;
+    height: 24px;
+  }
+
+  .responsive_mobile .language {
+    position: relative;
+    display: inline-block;
+  }
+
+  .responsive_mobile .language > a {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 10px;
+    font-family: "Gilroy-SemiBold.ttf";
+  }
+  .dropdown-language {
+    display: none;
+    position: absolute;
+    box-shadow: 0px 8px 16px 0px;
+    z-index: 1;
+  }
+
+  .dropdown-language a {
+    color: black;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+  }
+
+  .dropdown-language a:hover {
+    color: gray;
+  }
+  .show {
+    display: block;
+  }
+
+  .header_main {
+    display: none;
+  }
+  .responsive_main {
+    display: none;
+  }
+}

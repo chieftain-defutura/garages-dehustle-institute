@@ -1,0 +1,72 @@
+@font-face {
+  font-family: "NeuePower-Ultra.ttf";
+  src: url(../../assets/fonts/NeuePower-Ultra.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Medium.ttf";
+  src: url(../../assets/fonts/Gilroy-Medium.ttf);
+}
+.unschool_main {
+  background-color: black;
+  padding: 0px 200px;
+}
+
+.unschool_box {
+  padding: 32px;
+  background-color: #141414;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.unschool_main .unschool_box h2 {
+  font-family: "NeuePower-Ultra.ttf";
+  font-size: 55px;
+  color: #ff7a00;
+}
+
+.unschool_main .unschool_box p {
+  font-family: "Gilroy-Medium.ttf";
+  color: #ffffff;
+  font-size: 22px;
+}
+
+.unschool_main .unschool_box img {
+  width: 70%;
+  height: 70%;
+}
+
+@media (max-width: 366px) {
+  .unschool_main .unschool_box img {
+    width: 100%;
+    height: 100%;
+  }
+  .unschool_main {
+    background-color: black;
+    padding: 0px 20px;
+  }
+  .unschool_main .unschool_box h2 {
+    font-family: "NeuePower-Ultra.ttf";
+    font-size: 17.8px;
+    color: #ff7a00;
+  }
+  .unschool_box {
+    padding: 12px;
+    background-color: #141414;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+  }
+  .unschool_main .unschool_box p {
+    font-family: "Gilroy-Medium.ttf";
+    color: #ffffff;
+    font-size: 9.5px;
+  }
+}

@@ -1,0 +1,138 @@
+@font-face {
+  font-family: "Staatliches-Regular.ttf";
+  src: url(../../assets/fonts/Staatliches-Regular.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Bold.ttf";
+  src: url(../../assets/fonts/Gilroy-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Medium.ttf";
+  src: url(../../assets/fonts/Gilroy-Medium.ttf);
+}
+
+.calendar {
+  padding: 64px;
+  margin-top: 16px;
+  display: flex;
+  justify-content: center;
+  gap: 200px;
+}
+
+.calendar .road_map {
+  width: 435px;
+  height: 809px;
+  padding: 16px;
+  background-color: #ff7a00;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  border-radius: 10px;
+}
+
+.road_map > button {
+  color: #ff7a00;
+  background-color: white;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+}
+
+.calendar_dates {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.calendar_dates .dates_head {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.calendar_dates .dates_head > h2 {
+  color: #5b5b5b;
+  font-size: 26px;
+  font-family: "Gilroy-Bold.ttf";
+}
+
+.main_dates {
+  display: flex;
+  gap: 40px;
+}
+
+.main_dates .apply_title_list {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.main_dates .apply_title_list .apply_titles {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.apply_titles > h2 {
+  font-size: 24px;
+  color: #ff7a00;
+  font-family: "Gilroy-Medium.ttf";
+}
+
+.apply_titles > a {
+  text-decoration: none;
+  color: #777777;
+  font-size: 14px;
+  font-family: "Gilroy-Medium.ttf";
+}
+
+.dot_lines {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.dot_lines .vsline {
+  border-left: 1px solid #ff7a00;
+  height: 50px;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.dot_lines .vline {
+  border-left: 1px solid #ff7a00;
+  height: 100px;
+  left: 50%;
+  margin-left: -3px;
+  top: 0;
+}
+
+.apply_dates {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  font-size: 16px;
+  padding-top: 22px;
+}
+
+.apply_dates .last_date {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.apply_dates .last_date > h3 {
+  color: black;
+  font-family: "Gilroy-Medium.ttf";
+}
+
+.apply_dates .last_date > h4 {
+  color: #777777;
+  font-family: "Gilroy-Medium.ttf";
+}

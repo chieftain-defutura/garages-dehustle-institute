@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Boldini-Bold.ttf";
+  src: url(../../assets/fonts/Boldini-Bold.ttf);
+}
+
+@font-face {
+  font-family: "Gilroy-Regular.ttf";
+  src: url(../../assets/fonts/Gilroy-Regular.ttf);
+}
+
+@font-face {
+  font-family: "NeuePower-Ultra.ttf";
+  src: url(../../assets/fonts/NeuePower-Ultra.ttf);
+}
+
+.experience_main {
+  padding-bottom: 100px;
+  background-color: #ff7a00;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+
+.experience_main button {
+  background: none;
+  color: white;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  padding: 5px 20px;
+}
+.semesters {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+}
+
+.experience_main .semesters_grid .semesters #borders {
+  border-bottom: 2px solid white;
+}
+
+.semesters p {
+  text-align: center;
+  font-family: "Gilroy-Regular.ttf";
+}
+.experience_main h2 {
+  font-family: "NeuePower-Ultra.ttf";
+  text-align: center;
+  font-size: 53.55px;
+}
+
+.counts {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  background-color: #ff8a1f;
+  width: 891px;
+}
+
+.counts h1 {
+  border: 1px solid #ffe3ca;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 60px;
+  font-family: "Boldini-Bold.ttf";
+}
+
+.counts h1 span {
+  font-size: 14px;
+  font-family: "Gilroy-Regular.ttf";
+}
+
+@media (max-width: 366px) {
+  .experience_main h2 {
+    font-family: "NeuePower-Ultra.ttf";
+    text-align: center;
+    font-size: 20.95px;
+  }
+
+  .semesters_grid {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .counts h1 {
+    border: 1px solid #ffe3ca;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    font-family: "Boldini-Bold.ttf";
+  }
+
+  .counts h1 span {
+    font-size: 10px;
+    font-family: "Gilroy-Regular.ttf";
+  }
+
+  .counts {
+    width: 100%;
+  }
+
+  .semesters p {
+    text-align: center;
+    font-family: "Gilroy-Regular.ttf";
+    font-size: 12px;
+  }
+}
