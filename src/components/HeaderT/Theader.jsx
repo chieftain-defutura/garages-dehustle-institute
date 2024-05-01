@@ -10,7 +10,7 @@ import SamplePDF from "./Sample.pdf";
 import Close from "../../assets/icons/icon-bar-cancel.png";
 import ExternalW from "../../assets/icons/external-white.svg";
 import Check from "../../assets/icons/check.svg";
-import "./header.css";
+import "./Theader.css";
 import Select from "../selectlang/Select";
 
 const Header = () => {
@@ -107,12 +107,17 @@ const Header = () => {
       <div className="content_btns">
         <a href="#" onClick={onButtonClick}>
           <img src={CloudColor} alt="access" />
-          <h4>Download Brochure</h4>
+          <h4>
+            {" "}
+            இதர விவரங்களை
+            <br />
+            அறிய பதிவிறக்கவும்
+          </h4>
         </a>
         <button>
           <img src={ExternalW} alt="ExternalLink" />
           <a href="https://openinapp.com/vibe/public/garages">
-            <h3>Nominate Now</h3>
+            <h3>இப்போதே பரிந்துரைக்கவும்</h3>
           </a>
         </button>
       </div>
@@ -169,12 +174,17 @@ const Header = () => {
           </div>
           <a href="#" onClick={onButtonClick}>
             <img src={cloud} alt="access" />
-            <h4>Download Brochure</h4>
+            <h4>
+              {" "}
+              இதர விவரங்களை
+              <br />
+              அறிய பதிவிறக்கவும்
+            </h4>
           </a>
           <button>
             <a href="https://openinapp.com/vibe/public/garages">
-              <h3>Nominate Now</h3>
-            </a>{" "}
+              <h3>இப்போதே பரிந்துரைக்கவும்</h3>
+            </a>
             <img src={External} alt="ExternalLink" />
           </button>
         </div>
@@ -184,10 +194,7 @@ const Header = () => {
         <div className="responsive_head">
           <img src={Logo} alt="GaragesLogo" />
           <button>
-            <a href="https://openinapp.com/vibe/public/garages">
-              <h3>Nominate Now</h3>
-            </a>
-            <img src={External} alt="ExternalLink" />
+            <h3>Nominate Now</h3> <img src={External} alt="ExternalLink" />
           </button>
         </div>
       </div>

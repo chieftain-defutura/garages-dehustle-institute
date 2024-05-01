@@ -117,7 +117,10 @@ const Hero = () => {
         </div>
       </div>
       <button id="nom_hide">
-        <h3>Nominate Now</h3> <img src={External} alt="ExternalLink" />
+        <a href="https://openinapp.com/vibe/public/garages">
+          <h3>Nominate Now</h3>
+        </a>
+        <img src={External} alt="ExternalLink" />
       </button>
       <div className="mob_potentials">
         <p>
