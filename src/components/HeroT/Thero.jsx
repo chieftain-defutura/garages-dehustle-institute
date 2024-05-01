@@ -11,22 +11,22 @@ import SamplePDF from "./Sample.pdf";
 import "./Thero.css";
 
 const Hero = () => {
-  const onButtonClick = () => {
-    const pdfUrl = SamplePDF;
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "document.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const onButtonClick = () => {
+  //   const pdfUrl = SamplePDF;
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = "document.pdf"; // specify the filename
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <>
       <div className="hero_main">
         <img src={Unschool} alt="unschool-logo" />
         <p>2024, மே 20, 21 மற்றும் 22 தேதிகளில் நடைபெறுகிறது</p>
-        <a href="#" onClick={onButtonClick}>
+        <a href="https://openinapp.com/vibe/public/garages">
           <img src={cloud} alt="access" />
           <h4>
             இதர விவரங்களை
@@ -99,7 +99,7 @@ const Hero = () => {
       <div className="responsive_mob_hero">
         <img src={Unschool} alt="unschool-logo" />
         <p>2024, மே 20, 21 மற்றும் 22 தேதிகளில் நடைபெறுகிறது</p>
-        <a href="#" onClick={onButtonClick}>
+        <a href="https://openinapp.com/vibe/public/garages">
           <img src={cloud} alt="access" />
           <h4>
             {" "}
@@ -125,7 +125,10 @@ const Hero = () => {
         </div>
       </div>
       <button id="nom_hide">
-        <h3>Nominate Now</h3> <img src={External} alt="ExternalLink" />
+        <a href="https://openinapp.com/vibe/public/garages">
+          <h3>இப்போதே பரிந்துரைக்கவும்</h3>
+        </a>{" "}
+        <img src={External} alt="ExternalLink" />
       </button>
       <div className="mob_potentials">
         <p>

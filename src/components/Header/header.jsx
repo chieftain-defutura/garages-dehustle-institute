@@ -16,15 +16,15 @@ import Select from "../selectlang/Select";
 const Header = () => {
   const [langOpen, setLangOpen] = useState(false);
 
-  const onButtonClick = () => {
-    const pdfUrl = SamplePDF;
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "document.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const onButtonClick = () => {
+  //   const pdfUrl = SamplePDF;
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = "document.pdf"; // specify the filename
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   const [sidebarIsOn, setSidebarState] = useState(false);
   const [langBar, setLangBar] = useState(false);
@@ -105,7 +105,7 @@ const Header = () => {
         }}
       />
       <div className="content_btns">
-        <a href="#" onClick={onButtonClick}>
+        <a href="https://openinapp.com/vibe/public/garages">
           <img src={CloudColor} alt="access" />
           <h4>Download Brochure</h4>
         </a>
@@ -167,7 +167,7 @@ const Header = () => {
               <img src={Arrow} alt="down arrow" />
             </a>
           </div>
-          <a href="#" onClick={onButtonClick}>
+          <a href="https://openinapp.com/vibe/public/garages">
             <img src={cloud} alt="access" />
             <h4>Download Brochure</h4>
           </a>

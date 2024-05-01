@@ -16,15 +16,15 @@ import Select from "../selectlang/Select";
 const Header = () => {
   const [langOpen, setLangOpen] = useState(false);
 
-  const onButtonClick = () => {
-    const pdfUrl = SamplePDF;
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "document.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const onButtonClick = () => {
+  //   const pdfUrl = SamplePDF;
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = "document.pdf"; // specify the filename
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   const [sidebarIsOn, setSidebarState] = useState(false);
   const [langBar, setLangBar] = useState(false);
@@ -105,7 +105,7 @@ const Header = () => {
         }}
       />
       <div className="content_btns">
-        <a href="#" onClick={onButtonClick}>
+        <a href="https://openinapp.com/vibe/public/garages">
           <img src={CloudColor} alt="access" />
           <h4>
             {" "}
@@ -172,7 +172,7 @@ const Header = () => {
               <img src={Arrow} alt="down arrow" />
             </a>
           </div>
-          <a href="#" onClick={onButtonClick}>
+          <a href="https://openinapp.com/vibe/public/garages">
             <img src={cloud} alt="access" />
             <h4>
               {" "}
@@ -194,7 +194,10 @@ const Header = () => {
         <div className="responsive_head">
           <img src={Logo} alt="GaragesLogo" />
           <button>
-            <h3>Nominate Now</h3> <img src={External} alt="ExternalLink" />
+            <a href="https://openinapp.com/vibe/public/garages">
+              <h3>இப்போதே பரிந்துரைக்கவும்</h3>
+            </a>{" "}
+            <img src={External} alt="ExternalLink" />
           </button>
         </div>
       </div>

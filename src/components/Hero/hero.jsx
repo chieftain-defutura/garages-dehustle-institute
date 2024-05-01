@@ -11,22 +11,22 @@ import SamplePDF from "./Sample.pdf";
 import "./hero.css";
 
 const Hero = () => {
-  const onButtonClick = () => {
-    const pdfUrl = SamplePDF;
-    const link = document.createElement("a");
-    link.href = pdfUrl;
-    link.download = "document.pdf"; // specify the filename
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
-  };
+  // const onButtonClick = () => {
+  //   const pdfUrl = SamplePDF;
+  //   const link = document.createElement("a");
+  //   link.href = pdfUrl;
+  //   link.download = "document.pdf"; // specify the filename
+  //   document.body.appendChild(link);
+  //   link.click();
+  //   document.body.removeChild(link);
+  // };
 
   return (
     <>
       <div className="hero_main">
         <img src={Unschool} alt="unschool-logo" />
         <p>Happening on 20th, 21st & 22nd Of May, 2024</p>
-        <a href="#" onClick={onButtonClick}>
+        <a href="https://openinapp.com/vibe/public/garages">
           <img src={cloud} alt="access" />
           <h4>Download Brochure</h4>
         </a>
@@ -97,7 +97,7 @@ const Hero = () => {
       <div className="responsive_mob_hero">
         <img src={Unschool} alt="unschool-logo" />
         <p>Happening on 20th, 21st & 22nd Of May, 2024</p>
-        <a href="#" onClick={onButtonClick}>
+        <a href="https://openinapp.com/vibe/public/garages">
           <img src={cloud} alt="access" />
           <h4>Download Brochure</h4>
         </a>
