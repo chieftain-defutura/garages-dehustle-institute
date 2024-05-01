@@ -7,6 +7,7 @@ import "./App.css";
 //import Experience from "./components/experience/Experience";
 import Header from "./components/Header/header";
 import Hero from "./components/Hero/hero";
+import Select from "./components/selectlang/Select";
 //import Businessunschool from "./components/JoinUnschool/businessunschool";
 //import Lucky from "./components/lucky/Lucky";
 
@@ -15,6 +16,7 @@ function App() {
     <>
       <Header />
       <Hero />
+      <Select />
       {/* <Businessunschool />
       <Curriculum />
       <Experience />

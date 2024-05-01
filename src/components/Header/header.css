@@ -32,9 +32,18 @@
   gap: 50px;
 }
 
+.header_btns {
+  display: flex;
+  align-items: center;
+}
+
 .header_btns > a {
   color: white;
   font-size: 14px;
+}
+
+.header_btns .language > a {
+  color: white;
 }
 
 .header_main .header_btns a,

@@ -11,8 +11,11 @@ import Close from "../../assets/icons/icon-bar-cancel.png";
 import ExternalW from "../../assets/icons/external-white.svg";
 import Check from "../../assets/icons/check.svg";
 import "./header.css";
+import Select from "../selectlang/Select";
 
 const Header = () => {
+  const [langOpen, setLangOpen] = useState(false);
+
   const onButtonClick = () => {
     const pdfUrl = SamplePDF;
     const link = document.createElement("a");
@@ -122,23 +125,23 @@ const Header = () => {
         {!check ? (
           <a
             href="#"
-            id="select_tick"
             onClick={(e) => {
               e.preventDefault();
               setCheck(true);
             }}
           >
-            Tamil <img src={Check} alt="tick" />
+            Tamil
           </a>
         ) : (
           <a
             href="#"
+            id="select_tick"
             onClick={(e) => {
               e.preventDefault();
               setCheck(false);
             }}
           >
-            Tamil
+            Tamil <img src={Check} alt="tick" />
           </a>
         )}
       </div>
@@ -151,6 +154,17 @@ const Header = () => {
         <img src={Logo} alt="GaragesLogo" />
 
         <div className="header_btns">
+          <div class="language">
+            <a
+              href="#"
+              className="lang-drpdwn-btn"
+              onClick={() => setLangOpen(true)}
+            >
+              <img src={Globe} alt="language" />
+              English
+              <img src={Arrow} alt="down arrow" />
+            </a>
+          </div>
           <a href="#" onClick={onButtonClick}>
             <img src={cloud} alt="access" />
             <h4>Download Brochure</h4>
@@ -159,6 +173,7 @@ const Header = () => {
             <h3>Nominate Now</h3> <img src={External} alt="ExternalLink" />
           </button>
         </div>
+        <Select trigger={langOpen} setTrigger={setLangOpen} />
       </div>
       <div className="responsive_main">
         <div className="responsive_head">
