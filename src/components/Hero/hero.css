@@ -361,7 +361,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Gilroy-SemiBoldItalic.ttf";
-
     width: 340px;
   }
 
@@ -399,7 +398,7 @@
     font-size: 16px;
     text-align: center;
     position: absolute;
-    top: 148%;
+    top: 152%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -495,7 +494,6 @@
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Gilroy-SemiBoldItalic.ttf";
-
     width: 340px;
   }
 
@@ -576,6 +574,17 @@
 }
 
 @media (max-width: 366px) {
+  .responsive_mob_hero .mob_hero_bg > p {
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Gilroy-SemiBoldItalic.ttf";
+    width: 340px;
+  }
+
   .mob_potentials > p {
     color: white;
     padding: 18px 16px;
@@ -585,7 +594,7 @@
     font-size: 16px;
     text-align: center;
     position: absolute;
-    top: 152%;
+    top: 148%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
