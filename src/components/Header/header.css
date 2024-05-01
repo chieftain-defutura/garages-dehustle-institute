@@ -3,6 +3,11 @@
   src: url(../../assets/fonts/Gilroy-SemiBold.ttf);
 }
 
+@font-face {
+  font-family: "Gilroy-Regular.ttf";
+  src: url(../../assets/fonts/Gilroy-Regular.ttf);
+}
+
 .header_main {
   padding: 16px 64px;
   background-color: #ff7a00;
@@ -57,7 +62,7 @@
   gap: 20px;
   width: 100%;
   height: 100vh;
-  padding: 10px;
+  padding: 20px;
 }
 
 .content_btns button {
@@ -65,7 +70,8 @@
   background-color: #ff7a00;
   color: white;
   padding: 7.37px 30.27px;
-  font-family: "Gilroy-SemiBold.ttf";
+  font-family: "Gilroy-Regular.ttf";
+  font-weight: 600;
   font-size: 12px;
   cursor: pointer;
 }
@@ -80,6 +86,7 @@
   background-color: white;
   padding: 16px;
   display: none;
+  padding: 20px;
 }
 
 .content_btns > a {
@@ -91,6 +98,8 @@
   align-items: center;
   justify-content: center;
   padding: 5px 0;
+  font-family: "Gilroy-Regular.ttf";
+  font-weight: 600;
 }
 .responsive_main {
   display: none;
@@ -187,12 +196,15 @@
     color: white;
     gap: 5px;
     font-family: "Gilroy-SemiBold.ttf";
+    text-decoration: none;
   }
   .dropdown-language {
-    display: none;
     position: absolute;
     box-shadow: 0px 8px 16px 0px;
     z-index: 1;
+    background-color: white;
+    top: 11%;
+    left: 65%;
   }
 
   .dropdown-language a {
@@ -200,6 +212,12 @@
     padding: 10px;
     text-decoration: none;
     display: block;
+    width: 120px;
+  }
+
+  .dropdown-language > #select_tick {
+    display: flex;
+    justify-content: space-between;
   }
 
   .dropdown-language a:hover {
@@ -215,5 +233,9 @@
 
   .responsive_main {
     display: none;
+  }
+
+  .langbar {
+    display: block;
   }
 }

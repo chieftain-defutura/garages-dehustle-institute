@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import Logo from "../../assets/images/garages-logo.png";
 import External from "../../assets/images/external-link.png";
 import Ham from "../../assets/icons/hamburger.svg";
@@ -9,6 +9,7 @@ import Arrow from "../../assets/icons/chevron.svg";
 import SamplePDF from "./Sample.pdf";
 import Close from "../../assets/icons/icon-bar-cancel.png";
 import ExternalW from "../../assets/icons/external-white.svg";
+import Check from "../../assets/icons/check.svg";
 import "./header.css";
 
 const Header = () => {
@@ -22,8 +23,9 @@ const Header = () => {
     document.body.removeChild(link);
   };
 
-  const [sidebarIsOn, setSidebarState] = React.useState(false);
-  const [langBar, setLangBar] = React.useState(false);
+  const [sidebarIsOn, setSidebarState] = useState(false);
+  const [langBar, setLangBar] = useState(false);
+  const [check, setCheck] = useState(false);
 
   const hamburger = (
     <>
@@ -45,6 +47,46 @@ const Header = () => {
             setSidebarState(false);
           }}
         />
+      )}
+    </>
+  );
+
+  const dropdown = (
+    <>
+      {!langBar ? (
+        <div
+          className="dropdown"
+          onClick={(e) => {
+            e.preventDefault();
+            setLangBar(true);
+          }}
+        >
+          <div class="language">
+            <a href="#" className="lang-drpdwn-btn">
+              <img src={Globe} alt="language" />
+              English
+              <img src={Arrow} alt="down arrow" />
+            </a>
+          </div>
+        </div>
+      ) : (
+        <>
+          <div
+            className="dropdown"
+            onClick={(e) => {
+              e.preventDefault();
+              setLangBar(false);
+            }}
+          >
+            <div class="language">
+              <a href="#" className="lang-drpdwn-btn">
+                <img src={Globe} alt="language" />
+                English
+                <img src={Arrow} alt="down arrow" />
+              </a>
+            </div>
+          </div>
+        </>
       )}
     </>
   );
@@ -76,7 +118,29 @@ const Header = () => {
     <div className="langbar">
       <div class="dropdown-language">
         <a href="#">English</a>
-        <a href="#">Tamil</a>
+        <hr />
+        {!check ? (
+          <a
+            href="#"
+            id="select_tick"
+            onClick={(e) => {
+              e.preventDefault();
+              setCheck(true);
+            }}
+          >
+            Tamil <img src={Check} alt="tick" />
+          </a>
+        ) : (
+          <a
+            href="#"
+            onClick={(e) => {
+              e.preventDefault();
+              setCheck(false);
+            }}
+          >
+            Tamil
+          </a>
+        )}
       </div>
     </div>
   );
@@ -108,13 +172,8 @@ const Header = () => {
         {hamburger}
         {sidebarIsOn && sidebar}
         <img src={Logo} alt="GaragesLogo" id="logo" />
-        <div class="language">
-          <a href="#" className="lang-drpdwn-btn">
-            <img src={Globe} alt="language" />
-            English
-            <img src={Arrow} alt="down arrow" />
-          </a>
-        </div>
+        {dropdown}
+        {langBar && langbar}
       </div>
     </>
   );
