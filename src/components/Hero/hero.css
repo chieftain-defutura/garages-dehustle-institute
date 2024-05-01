@@ -115,8 +115,8 @@
 }
 
 .hero_main .hero_bg > img {
-  height: 410px;
-  width: 266.13px;
+  height: 420px;
+  width: 276.13px;
 }
 
 .hero_main > img {
@@ -128,7 +128,7 @@
   font-size: 15px;
   color: white;
   position: absolute;
-  top: 90%;
+  top: 92%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Gilroy-SemiBoldItalic.ttf";
