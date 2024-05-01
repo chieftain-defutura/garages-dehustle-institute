@@ -9,7 +9,7 @@
 }
 
 .header_main {
-  padding: 16px 64px;
+  padding: 12px 64px;
   background-color: #ff7a00;
   display: flex;
   justify-content: space-between;
@@ -23,8 +23,8 @@
 }
 
 .header_main > img {
-  width: 144.66px;
-  height: 55.3px;
+  width: 136.66px;
+  height: 47.3px;
 }
 
 .header_main .header_btns {
@@ -50,7 +50,7 @@
   border: none;
   background-color: white;
   color: #ff7a00;
-  padding: 7.37px 30.27px;
+  padding: 6.37px 30.27px;
   font-family: "Gilroy-SemiBold.ttf";
   font-size: 12px;
   cursor: pointer;
