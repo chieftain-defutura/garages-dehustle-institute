@@ -36,6 +36,7 @@
   justify-content: center;
   align-items: center;
   padding: 12px 12px 0;
+  height: 100vh;
 }
 
 .hero_main > p {
@@ -128,7 +129,7 @@
   font-size: 15px;
   color: white;
   position: absolute;
-  top: 88%;
+  top: 98%;
   left: 50%;
   transform: translate(-50%, -50%);
   font-family: "Gilroy-SemiBoldItalic.ttf";
