@@ -58,7 +58,6 @@
 .header_btns button {
   border: none;
   background-color: white;
-
   padding: 6.37px 30.27px;
   font-family: "Gilroy-SemiBold.ttf";
   font-size: 12px;
@@ -137,6 +136,7 @@
   .responsive_head {
     display: flex;
     justify-content: space-between;
+    align-items: center;
     padding: 16px 32px;
     background-color: #ff7a00;
   }
@@ -145,7 +145,7 @@
     height: 71.5px;
   }
 
-  .responsive_head > button {
+  .responsive_head .language > button {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -160,9 +160,21 @@
     height: 39px;
   }
 
-  .responsive_head button > a {
+  .responsive_head .language button > a {
     text-decoration: none;
     color: #ff7a00;
+  }
+
+  .responsive_head .language > a {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  .responsive_head .language {
+    display: flex;
+    gap: 20px;
   }
 }
 
@@ -181,6 +193,13 @@
   .responsive_head > button {
     width: 180px;
     height: 39px;
+  }
+}
+
+@media (max-width: 600px) {
+  .responsive_head > img {
+    width: 164.01px;
+    height: 54.5px;
   }
 }
 
@@ -228,7 +247,7 @@
     z-index: 1;
     background-color: white;
     top: 11%;
-    left: 65%;
+    left: 60%;
   }
 
   .dropdown-language a {
@@ -237,6 +256,7 @@
     text-decoration: none;
     display: block;
     width: 120px;
+    font-family: "Gilroy-SemiBold.ttf";
   }
 
   .dropdown-language > #select_tick {

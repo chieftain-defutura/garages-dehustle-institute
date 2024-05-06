@@ -154,6 +154,11 @@
 #nom_hide {
   display: none;
 }
+
+.whatsapp {
+  position: fixed;
+}
+
 @media (max-width: 1000px) {
   .hero_main {
     padding: 36px 36px 0;
@@ -168,7 +173,7 @@
     font-size: 16px;
     color: white;
     position: absolute;
-    top: 102%;
+    top: 97%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Gilroy-SemiBoldItalic.ttf";
@@ -277,7 +282,7 @@
     font-size: 14px;
     color: white;
     position: absolute;
-    top: 135%;
+    top: 110%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Gilroy-SemiBoldItalic.ttf";
@@ -299,7 +304,7 @@
     font-size: 14px;
     color: white;
     position: absolute;
-    top: 130%;
+    top: 113%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Gilroy-SemiBoldItalic.ttf";
@@ -357,7 +362,7 @@
     font-size: 11px;
     color: white;
     position: absolute;
-    top: 125%;
+    top: 120%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Gilroy-SemiBoldItalic.ttf";
@@ -368,7 +373,6 @@
     display: block;
     border: none;
     background-color: white;
-
     padding: 7.37px 30.27px;
     font-family: "Gilroy-SemiBold.ttf";
     font-size: 14px;
@@ -404,7 +408,7 @@
     font-weight: 600;
     text-align: center;
     position: absolute;
-    top: 152%;
+    top: 145%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -498,7 +502,7 @@
     font-size: 11px;
     color: white;
     position: absolute;
-    top: 125%;
+    top: 122%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: "Gilroy-SemiBoldItalic.ttf";
@@ -539,7 +543,7 @@
     font-size: 16px;
     text-align: center;
     position: absolute;
-    top: 152%;
+    top: 145%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -602,7 +606,7 @@
     font-size: 16px;
     text-align: center;
     position: absolute;
-    top: 148%;
+    top: 145%;
     left: 50%;
     transform: translate(-50%, -50%);
   }
@@ -611,6 +615,17 @@
 @media (max-width: 360px) {
   .mob_potentials {
     padding-top: 150px;
+  }
+
+  .responsive_mob_hero .mob_hero_bg > p {
+    font-size: 11px;
+    color: white;
+    position: absolute;
+    top: 125%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: "Gilroy-SemiBoldItalic.ttf";
+    width: 340px;
   }
 
   .mob_potentials > p {
@@ -622,7 +637,7 @@
     font-size: 16px;
     text-align: center;
     position: absolute;
-    top: 152%;
+    top: 157%;
     left: 50%;
     transform: translate(-50%, -50%);
   }

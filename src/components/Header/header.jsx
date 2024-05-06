@@ -183,13 +183,25 @@ const Header = () => {
       <div className="responsive_main">
         <div className="responsive_head">
           <img src={Logo} alt="GaragesLogo" />
-          <button>
-            <a href="https://openinapp.com/vibe/public/garages">
-              <h3>Nominate Now</h3>
+          <div class="language">
+            <a
+              href="#"
+              className="lang-drpdwn-btn"
+              onClick={() => setLangOpen(true)}
+            >
+              <img src={Globe} alt="language" />
+              English
+              <img src={Arrow} alt="down arrow" />
             </a>
-            <img src={External} alt="ExternalLink" />
-          </button>
+            <button>
+              <a href="https://openinapp.com/vibe/public/garages">
+                <h3>Nominate Now</h3>
+              </a>
+              <img src={External} alt="ExternalLink" />
+            </button>
+          </div>
         </div>
+        <Select trigger={langOpen} setTrigger={setLangOpen} />
       </div>
       <div className="responsive_mobile">
         {hamburger}

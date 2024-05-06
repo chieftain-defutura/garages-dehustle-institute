@@ -7,6 +7,7 @@ import Anchor from "../../assets/icons/anchor.svg";
 import Top from "../../assets/images/top500.png";
 import cloud from "../../assets/icons/cloud.svg";
 import External from "../../assets/images/external-link.png";
+import Chat from "../../assets/icons/chat.svg";
 import SamplePDF from "./Sample.pdf";
 import "./hero.css";
 
@@ -162,6 +163,11 @@ const Hero = () => {
           </p>
           <img src={Top} alt="Top 500" />
         </div>
+      </div>
+      <div className="whatsapp">
+        <a href="">
+          <img src={Chat} alt="whatsapp" />
+        </a>
       </div>
     </>
   );
