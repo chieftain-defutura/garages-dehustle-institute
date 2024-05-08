@@ -1,19 +1,19 @@
 import React, { useState } from "react";
 import Logo from "../../assets/images/garages-logo.png";
-import External from "../../assets/images/external-link.png";
+import External from "../../assets/images/link.png";
 import Ham from "../../assets/icons/hamburger.svg";
 import Globe from "../../assets/icons/globe.svg";
 import cloud from "../../assets/icons/cloud.svg";
 import CloudColor from "../../assets/icons/cloud-color.svg";
 import Arrow from "../../assets/icons/chevron.svg";
-import SamplePDF from "./Sample.pdf";
 import Close from "../../assets/icons/icon-bar-cancel.png";
 import ExternalW from "../../assets/icons/external-white.svg";
 import Check from "../../assets/icons/check.svg";
 import "./header.css";
 import Select from "../selectlang/Select";
+import Hero from "../Hero/hero";
 
-const Header = () => {
+const Header = ({ toggleLanguage, language }) => {
   const [langOpen, setLangOpen] = useState(false);
 
   // const onButtonClick = () => {
@@ -110,7 +110,7 @@ const Header = () => {
           <h4>Download Brochure</h4>
         </a>
         <button>
-          <img src={ExternalW} alt="ExternalLink" />
+          <img src={ExternalW} alt="ExternalLink" width={16} height={16} />
           <a href="https://openinapp.com/vibe/public/garages">
             <h3>Nominate Now</h3>
           </a>
@@ -121,7 +121,7 @@ const Header = () => {
 
   const langbar = (
     <div className="langbar">
-      <div class="dropdown-language">
+      <div className="dropdown-language">
         <a href="#">English</a>
         <hr />
         {!check ? (
@@ -156,7 +156,7 @@ const Header = () => {
         <img src={Logo} alt="GaragesLogo" />
 
         <div className="header_btns">
-          <div class="language">
+          <div className="language">
             <a
               href="#"
               className="lang-drpdwn-btn"
@@ -169,16 +169,34 @@ const Header = () => {
           </div>
           <a href="https://openinapp.com/vibe/public/garages">
             <img src={cloud} alt="access" />
-            <h4>Download Brochure</h4>
+            <h4>
+              {language === "en" ? (
+                "Download Brochure"
+              ) : (
+                <>
+                  'இதர விவரங்களை
+                  <br />
+                  அறிய பதிவிறக்கவும்'
+                </>
+              )}
+            </h4>
           </a>
           <button>
             <a href="https://openinapp.com/vibe/public/garages">
-              <h3>Nominate Now</h3>
+              <h3>
+                {language === "en"
+                  ? "Nominate Now"
+                  : "இப்போதே பரிந்துரைக்கவும்"}
+              </h3>
             </a>{" "}
-            <img src={External} alt="ExternalLink" />
+            <img src={External} alt="ExternalLink" width={16} height={16} />
           </button>
         </div>
-        <Select trigger={langOpen} setTrigger={setLangOpen} />
+        <Select
+          trigger={langOpen}
+          setTrigger={setLangOpen}
+          toggleLanguage={toggleLanguage}
+        />
       </div>
       <div className="responsive_main">
         <div className="responsive_head">
@@ -197,11 +215,15 @@ const Header = () => {
               <a href="https://openinapp.com/vibe/public/garages">
                 <h3>Nominate Now</h3>
               </a>
-              <img src={External} alt="ExternalLink" />
+              <img src={External} alt="ExternalLink" width={16} height={16} />
             </button>
           </div>
         </div>
-        <Select trigger={langOpen} setTrigger={setLangOpen} />
+        <Select
+          toggleLanguage={toggleLanguage}
+          trigger={langOpen}
+          setTrigger={setLangOpen}
+        />
       </div>
       <div className="responsive_mobile">
         {hamburger}
@@ -210,6 +232,7 @@ const Header = () => {
         {dropdown}
         {langBar && langbar}
       </div>
+      <Hero language={language} />
     </>
   );
 };

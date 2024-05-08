@@ -61,6 +61,7 @@
   text-align: left;
   width: 162px;
   height: 48px;
+  cursor: pointer;
 }
 
 @media (max-width: 800px) {
