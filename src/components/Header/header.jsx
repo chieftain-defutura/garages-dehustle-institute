@@ -107,12 +107,25 @@ const Header = ({ toggleLanguage, language }) => {
       <div className="content_btns">
         <a href="https://openinapp.com/vibe/public/garages">
           <img src={CloudColor} alt="access" />
-          <h4>Download Brochure</h4>
+          <h4>
+            {language === "en" ? (
+              "Download Brochure"
+            ) : (
+              <>
+                'இதர விவரங்களை
+                <br />
+                அறிய பதிவிறக்கவும்'
+              </>
+            )}
+          </h4>
         </a>
         <button>
           <img src={ExternalW} alt="ExternalLink" width={16} height={16} />
           <a href="https://openinapp.com/vibe/public/garages">
-            <h3>Nominate Now</h3>
+            <h3>
+              {" "}
+              {language === "en" ? "Nominate Now" : "இப்போதே பரிந்துரைக்கவும்"}
+            </h3>
           </a>
         </button>
       </div>
@@ -122,7 +135,9 @@ const Header = ({ toggleLanguage, language }) => {
   const langbar = (
     <div className="langbar">
       <div className="dropdown-language">
-        <a href="#">English</a>
+        <a href="#" onClick={() => toggleLanguage("en")}>
+          English
+        </a>
         <hr />
         {!check ? (
           <a
@@ -130,6 +145,7 @@ const Header = ({ toggleLanguage, language }) => {
             onClick={(e) => {
               e.preventDefault();
               setCheck(true);
+              toggleLanguage("ta");
             }}
           >
             Tamil

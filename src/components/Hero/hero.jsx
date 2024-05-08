@@ -26,7 +26,11 @@ const Hero = ({ language }) => {
     <>
       <div className="hero_main">
         <img src={Unschool} alt="unschool-logo" />
-        <p>Happening on 20th, 21st & 22nd Of May, 2024</p>
+        <p>
+          {language === "en"
+            ? "Happening on 20th, 21st & 22nd Of May, 2024"
+            : "2024, மே 20, 21 மற்றும் 22 தேதிகளில் நடைபெறுகிறது"}
+        </p>
         <a href="https://openinapp.com/vibe/public/garages">
           <img src={cloud} alt="access" />
           <h4>
@@ -191,69 +195,157 @@ const Hero = ({ language }) => {
       </div>
       <div className="responsive_mob_hero">
         <img src={Unschool} alt="unschool-logo" />
-        <p>Happening on 20th, 21st & 22nd Of May, 2024</p>
+        <p>
+          {language === "en"
+            ? "Happening on 20th, 21st & 22nd Of May, 2024"
+            : "2024, மே 20, 21 மற்றும் 22 தேதிகளில் நடைபெறுகிறது"}
+        </p>
         <a href="https://openinapp.com/vibe/public/garages">
           <img src={cloud} alt="access" />
-          <h4>Download Brochure</h4>
+          <h4>
+            {language === "en" ? (
+              "Download Brochure"
+            ) : (
+              <>
+                'இதர விவரங்களை
+                <br />
+                அறிய பதிவிறக்கவும்'
+              </>
+            )}
+          </h4>
         </a>
         <div className="mob_hero_bg">
           <img src={Samimg} alt="Sam" />
           <p>
-            The Great Uschooling Camp is a three day career awareness
-            <br />
-            bootcamp for students moving into undergraduate programmes
-            <br />
-            from higher education in the current year who are interested in
-            <br />
-            discovering their ideal dreams, develop ideas on them and turn
-            <br />
-            them into passion even before they enroll for college degrees.
+            {language === "en" ? (
+              <>
+                The Great Uschooling Camp is a three day career awareness
+                <br />
+                bootcamp for students moving into undergraduate programmes
+                <br />
+                from higher education in the current year who are interested in
+                <br />
+                discovering their ideal dreams, develop ideas on them and turn
+                <br />
+                them into passion even before they enroll for college degrees.
+              </>
+            ) : (
+              <>
+                {" "}
+                “The Great Unschooling Camp” என்பது நடப்பு ஆண்டில்
+                <br />
+                உயர்கல்வியில் இருந்து இளங்கலைப் படிப்புகளுக்குச்
+                <br />
+                செல்லும் கனவுகள் கொண்ட மற்றும் தங்கள்
+                <br />
+                இலட்சியங்களை கண்டறியும் ஆர்வமுள்ள
+                <br />
+                மாணவர்களுக்காக உருவாக்கப்பட்ட மூன்று நாள் தொழில்
+                <br /> விழிப்புணர்வு துவக்க முகாம் ஆகும்.
+              </>
+            )}
           </p>
         </div>
       </div>
       <button id="nom_hide">
         <a href="https://openinapp.com/vibe/public/garages">
-          <h3>Nominate Now</h3>
+          <h3>
+            {language === "en" ? "Nominate Now" : "இப்போதே பரிந்துரைக்கவும்"}
+          </h3>
         </a>
         <img src={External} alt="ExternalLink" width={16} height={16} />
       </button>
       <div className="mob_potentials">
         <p>
-          Reach your
-          <br />
-          potentials with
+          {language === "en" ? (
+            <>
+              Reach your
+              <br />
+              potentials with
+            </>
+          ) : (
+            <>
+              {" "}
+              உங்கள்
+              <br />
+              திறனை அடைய
+            </>
+          )}
         </p>
         <div className="potential_list">
           <div className="listing">
             <img src={Wind} alt="wind" width={26.4} height={26.4} />
             <p>
-              SENSORY
-              <br />
-              <span>Activation</span>
+              {language === "en" ? (
+                <>
+                  SENSORY
+                  <br />
+                  <span>Activation</span>
+                </>
+              ) : (
+                <>
+                  {" "}
+                  உணர்திறன்
+                  <br />
+                  <span>செயல்படுத்துதல்</span>
+                </>
+              )}
             </p>
           </div>
           <div className="listing">
             <img src={Zap} alt="zap" width={26.4} height={26.4} />
             <p>
-              THOUGHT
-              <br />
-              <span>Formulations</span>
+              {language === "en" ? (
+                <>
+                  {" "}
+                  THOUGHT
+                  <br />
+                  <span>Formulations</span>
+                </>
+              ) : (
+                <>
+                  சிந்தனை
+                  <br />
+                  <span>விதிமுறைகள்</span>
+                </>
+              )}
             </p>
           </div>
           <div className="listing">
             <img src={Anchor} alt="anchor" width={26.4} height={26.4} />
             <p>
-              HABIT
-              <br />
-              <span>Installations</span>
+              {language === "en" ? (
+                <>
+                  HABIT
+                  <br />
+                  <span>Installations</span>
+                </>
+              ) : (
+                <>
+                  பழக்க
+                  <br />
+                  <span>வரைமுறைகள்</span>
+                </>
+              )}
             </p>
           </div>
         </div>
         <div className="top_nominates">
           <p>
-            An exclusive
-            <br />
-            online camp for
+            {language === "en" ? (
+              <>
+                An exclusive
+                <br />
+                online camp for
+              </>
+            ) : (
+              <>
+                {" "}
+                ஒரு பிரத்யேக
+                <br />
+                ஆன்லைன் முகாம்
+              </>
+            )}
           </p>
           <img src={Top} alt="Top 500" />
         </div>
